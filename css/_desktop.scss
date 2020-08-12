@@ -1,0 +1,165 @@
+//Vista Desktop
+@media screen and (min-width: 992px){
+
+   header{
+        nav{ 
+            .logo{
+                margin: 1.4em 0 0 5em;
+            }
+
+            label{
+                #icon-burger{
+                    display: none;
+                }
+            }
+
+            ul{
+                display: flex;
+                justify-content: flex-end; 
+                margin: 0 3em 0 0;
+                background: $color-letra-claro;
+                width: 80vw;
+                height: 10vh;
+
+                li{
+                    
+                    a{
+                        font-size: 1rem;
+                        color: $color-letra-oscuro;
+
+                        &:hover{
+                            color: $color-boton;
+                            text-decoration: line-through;
+                        }
+                    }
+                }
+            }
+        }
+   }
+
+   .container{
+        width: 100vw;
+
+        .principal{
+           margin: 6em 0 0 8em;
+
+           h2{
+               font-size: 4rem;
+               margin-bottom: 0.3em;
+
+               strong{
+                color: $color-fondo;
+               }
+            }
+
+           p{
+               width: 43vw;
+               font-size: 1rem;
+           }
+
+           .btn{
+               width: 20vw;
+           }
+       }
+
+       #pod{
+           height: 138vh;
+           width: 100%;
+
+           h2{
+               padding: 2.5em 0 0.5em 2em;
+               font-size: 3rem;
+           }
+
+           .podcast{
+               display: grid;
+               grid-template-columns: repeat(2, 1fr);
+
+               .iframe{
+                   width: 40vw;
+                }
+
+               .phone{
+                   .cel{
+                       display: block;
+                       width: 340px;
+                       
+                   }
+               }
+           }
+        }
+
+        #we-are{
+            width: 40vw;
+            margin-left: 36em;
+            margin-top: -20em;
+        }
+
+        #guests{
+            margin-top: 6em;
+            .container-gallery{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+            }
+          .gallery{
+              width: 33.3vw;
+          }
+        }
+
+        #themes{
+            
+            h2{
+                margin-left: 3em;
+                font-size: 3rem;
+            }
+            
+            .icons{                
+                display: flex;
+                justify-content: space-evenly;
+            }
+        }
+
+        .distorted-news{
+            margin-top: 4em;
+            clip-path: polygon(0 23%, 100% 0, 100% 100%, 0% 100%);
+        }
+
+        .container-news{
+
+            h2{
+                padding-top: 4em;
+            }
+
+            .btn{
+                display: block;
+                margin: 0 auto;
+                width: 35vw;
+            }
+        }
+        
+        footer{
+            height: 5vh;
+        
+            .info-footer{
+                display: flex;
+                justify-content: space-between;
+                margin: 0 5em 0 5em;
+            }     
+            
+            .redes{
+                line-height: 11vh;;
+            }
+        }
+        
+
+    }
+}
+
+@media screen and (min-width: 1162px) and (max-width: 1370px)  {
+    .container{
+        #guests{
+            margin-top: 9em;
+        }
+    }
+
+}
