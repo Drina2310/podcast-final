@@ -103,13 +103,13 @@ header nav {
     margin: 0 auto;
     border: none; }
 .container .podcast .phone {
-  margin-top: 2.5em; }
+  margin-top: 1.5em; }
   .container .podcast .phone .cel {
     display: block;
     width: 90vw;
     margin: 0 auto; }
 .container #we-are .we {
-  margin: 25em 1em 0 1em; }
+  margin: 23em 1em 0 1em; }
   .container #we-are .we h2 {
     font-size: 2.2rem;
     font-family: 'IBM Plex Sans';
@@ -152,6 +152,7 @@ header nav {
     text-align: center; }
 .container .distorted-news {
   margin-top: 2em;
+  width: 100vw;
   height: 55vh;
   clip-path: polygon(0 11%, 100% 0, 100% 100%, 0% 100%);
   background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%); }
@@ -188,7 +189,7 @@ header nav {
       margin: 1.2em;
       color: #060A24; }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1024px) {
   header nav .logo {
     margin: 1.4em 0 0 5em; }
   header nav label #icon-burger {
@@ -205,6 +206,9 @@ header nav {
       color: #060A24; }
       header nav ul li a:hover {
         color: #00F3BB;
+        text-decoration: line-through; }
+      header nav ul li a:active {
+        color: #060A24;
         text-decoration: line-through; }
 
   .container {
@@ -237,10 +241,10 @@ header nav {
           width: 340px; }
     .container #we-are {
       width: 40vw;
-      margin-left: 36em;
+      margin-left: 32em;
       margin-top: -20em; }
     .container #guests {
-      margin-top: 6em; }
+      margin-top: 11em; }
       .container #guests .container-gallery {
         display: grid;
         grid-template-columns: repeat(3, 1fr); }
@@ -269,8 +273,80 @@ header nav {
         margin: 0 5em 0 5em; }
       .container footer .redes {
         line-height: 11vh; } }
-@media screen and (min-width: 1162px) and (max-width: 1370px) {
+@media screen and (min-width: 1150px) and (max-width: 1370px) {
+  .container #we-are {
+    margin-left: 36em; }
   .container #guests {
-    margin-top: 9em; } }
+    margin-top: 9em; }
+  .container .container-news .btn {
+    width: 30vw; } }
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  header nav ul {
+    height: 32vh; }
+    header nav ul li {
+      margin-top: 1em;
+      padding: 0; }
+
+  .container .podcast .phone .cel {
+    width: 380px; }
+  .container #we-are .we {
+    margin-top: 31em; } }
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  header nav label #icon-burger {
+    display: none; }
+  header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 3em 0 0;
+    background: #FFFFFF;
+    width: 80vw;
+    height: 10vh; }
+    header nav ul li a {
+      font-size: 1rem;
+      color: #060A24; }
+      header nav ul li a:hover {
+        color: #00F3BB;
+        text-decoration: line-through; }
+      header nav ul li a:active {
+        color: #060A24;
+        text-decoration: line-through; }
+
+  .container .principal {
+    margin-left: 2em; }
+    .container .principal h2 {
+      font-size: 2.5rem; }
+    .container .principal p {
+      width: 70vw; }
+    .container .principal .btn {
+      width: 40vw; }
+  .container #pod {
+    width: 100vw;
+    height: 130vh; }
+    .container #pod h2 {
+      padding: 1.5em 0 0.5em 1em;
+      font-size: 2.5rem; }
+    .container #pod .podcast {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); }
+      .container #pod .podcast .iframe {
+        width: 40vw; }
+      .container #pod .podcast .phone {
+        margin-top: 2.5em; }
+        .container #pod .podcast .phone .cel {
+          width: 340px; }
+  .container #we-are {
+    width: 45vw;
+    margin-left: 24em;
+    margin-top: -20em; }
+  .container #guests {
+    margin-top: 9em; }
+    .container #guests .container-gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); }
+    .container #guests .gallery {
+      width: 50vw; }
+  .container #themes .icons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); } }
 
 /*# sourceMappingURL=styles.css.map */

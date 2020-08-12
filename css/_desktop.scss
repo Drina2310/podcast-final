@@ -1,5 +1,5 @@
 //Vista Desktop
-@media screen and (min-width: 992px){
+@media screen and (min-width: 1024px){
 
    header{
         nav{ 
@@ -29,6 +29,11 @@
 
                         &:hover{
                             color: $color-boton;
+                            text-decoration: line-through;
+                        }
+
+                        &:active{
+                            color: $color-letra-oscuro;
                             text-decoration: line-through;
                         }
                     }
@@ -91,12 +96,12 @@
 
         #we-are{
             width: 40vw;
-            margin-left: 36em;
+            margin-left: 32em;
             margin-top: -20em;
         }
 
         #guests{
-            margin-top: 6em;
+            margin-top: 11em;
             .container-gallery{
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
@@ -155,11 +160,23 @@
     }
 }
 
-@media screen and (min-width: 1162px) and (max-width: 1370px)  {
+@media screen and (min-width: 1150px) and (max-width: 1370px)  {
     .container{
+
+        #we-are{
+            margin-left: 36em;
+        }
+
         #guests{
             margin-top: 9em;
         }
+
+        .container-news{
+            .btn{
+                width: 30vw;
+            }
+        }
+
     }
 
 }

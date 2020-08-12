@@ -159,7 +159,7 @@ header{
         }
 
         .phone{
-            margin-top: 2.5em;
+            margin-top: 1.5em;
             .cel{
                 display: block;
                 width: 90vw;
@@ -170,7 +170,7 @@ header{
 
     #we-are{
         .we{
-            margin: 25em 1em 0 1em;
+            margin: 23em 1em 0 1em;
 
 
             h2{
@@ -238,6 +238,7 @@ header{
 
     .distorted-news{
         margin-top: 2em;
+        width: 100vw;
         height: 55vh;
         clip-path: polygon(0 11%, 100% 0, 100% 100%, 0% 100%);
         background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
@@ -290,6 +291,4 @@ header{
             }
         }
     }
-
-
 }
